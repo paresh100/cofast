@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Ranges | COFAST - Precision Fasteners, Bearings & Adhesives</title>
+  <meta name="description" content="Explore over 9,000 product lines held in stock at COFAST Plymouth: High Tensile Bolts, A2/A4 Marine Stainless, Industrial Bearings, Nyloc Nuts, Lindapters, and Loctite.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="light-theme">
+
+  <!-- TOP BAR -->
+  <div class="top-bar">
+    <div class="container top-bar-container">
+      <div class="top-info">
+        <span class="hub-status"><span class="pulse-indicator"></span> Plymouth Logistics Hub Active</span>
+        <span class="divider">|</span>
+        <span>A38 Expressway Corridor &bull; Same-Day Despatch</span>
+        <span class="divider">|</span>
+        <span class="iso-tag">BS EN ISO 9001 Registered</span>
+      </div>
+      <div class="top-contact">
+        <a href="tel:+441752344321" class="top-link phone-highlight">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Trade Desk: +44 (0)1752 344321
+        </a>
+        <a href="mailto:enq321@cofast.co.uk" class="top-link">enq321@cofast.co.uk</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="brand">
+        <div class="brand-icon">
+          <svg width="28" height="28" viewBox="0 0 32 32" fill="none">
+            <polygon points="16,2 29,9.5 29,22.5 16,30 3,22.5 3,9.5" stroke="currentColor" stroke-width="2.5" fill="none"/>
+            <circle cx="16" cy="16" r="6" stroke="currentColor" stroke-width="2.5"/>
+            <circle cx="16" cy="16" r="2" fill="currentColor"/>
+          </svg>
+        </div>
+        <div class="brand-details">
+          <span class="brand-title">COFAST</span>
+          <span class="brand-subtitle">COMPANY FASTENERS LTD</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu">
+        <a href="about.html" class="nav-item">About Us</a>
+        <a href="products.html" class="nav-item active">Product Ranges</a>
+        <a href="kanban.html" class="nav-item">KANBAN &amp; Supply</a>
+        <a href="specials.html" class="nav-item">CNC Specials</a>
+        <a href="standards.html" class="nav-item">Standards &amp; Defence</a>
+        <a href="contact.html" class="nav-item">Contact &amp; Location</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="contact.html#enquiry" class="btn btn-primary nav-cta">
+          Request Technical Quote
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+        <button class="mobile-toggle" aria-label="Toggle Navigation" onclick="toggleMenu()">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero-content gs-reveal">
+        <div class="section-label">9,000+ STOCKED LINES IN PLYMOUTH</div>
+        <h1 class="page-hero-title">Comprehensive Product Ranges</h1>
+        <p class="page-hero-lead">
+          From standard commercial fasteners to safety-critical aerospace and marine fixings, industrial bearings, and specialized Loctite chemical adhesives.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTERACTIVE CAPABILITY TABS -->
+  <section class="section capabilities-section" style="background: #ffffff;">
+    <div class="container">
+      <div class="category-tabs gs-fade-up">
+        <button class="cat-tab active" onclick="switchCategory('bolts', this)">High Tensile Bolts &amp; Screws</button>
+        <button class="cat-tab" onclick="switchCategory('stainless', this)">A2 / A4 Stainless Steel</button>
+        <button class="cat-tab" onclick="switchCategory('bearings', this)">Bearings &amp; Power Transmission</button>
+        <button class="cat-tab" onclick="switchCategory('nuts', this)">Nuts, Washers &amp; Pins</button>
+        <button class="cat-tab" onclick="switchCategory('adhesives', this)">Loctite Adhesives</button>
+        <button class="cat-tab" onclick="switchCategory('specials_cat', this)">Special Bar-Turned Parts</button>
+      </div>
+
+      <!-- DYNAMIC TAB PANELS -->
+      <div class="capability-panels gs-fade-up">
+        
+        <!-- PANEL 1: HIGH TENSILE -->
+        <div class="cap-panel active" id="panel-bolts">
+          <div class="panel-grid">
+            <div class="panel-info">
+              <h3>High Tensile Steel Bolts &amp; Set Screws</h3>
+              <p>Manufactured to exacting engineering tolerances. Suitable for safety-critical structures, automotive sub-assemblies, and heavy plant applications.</p>
+              <ul class="spec-list">
+                <li><strong>Hexagon Head Bolts &amp; Set Screws:</strong> DIN 931 / DIN 933 / ISO 4014 / ISO 4017</li>
+                <li><strong>Socket Cap, Countersunk &amp; Button Heads:</strong> DIN 912 / DIN 7991 / ISO 7380</li>
+                <li><strong>Socket Set Screws:</strong> Cup Point, Cone Point, Dog Point, Flat Point (DIN 916)</li>
+                <li><strong>Strength Classes:</strong> Grade 8.8, 10.9, and 12.9 High Tensile</li>
+                <li><strong>Finishes:</strong> Bright Zinc Plated (BZP), Geomet, Zinc Flake, Self Colour</li>
+              </ul>
+              <div class="panel-cta">
+                <a href="contact.html#enquiry" class="btn btn-primary">Enquire for High Tensile Schedule</a>
+              </div>
+            </div>
+            <div class="panel-card-accent">
+              <div class="accent-box">
+                <span class="accent-title">ENGINEERING DATA</span>
+                <div class="accent-row"><span>Tensile Strength 8.8:</span> <strong>800 N/mm²</strong></div>
+                <div class="accent-row"><span>Tensile Strength 10.9:</span> <strong>1040 N/mm²</strong></div>
+                <div class="accent-row"><span>Tensile Strength 12.9:</span> <strong>1220 N/mm²</strong></div>
+                <div class="accent-row"><span>Certification:</span> <strong>EN 10204 3.1 Traceable</strong></div>
+                <div class="accent-badge-pill">Immediate Call-Off Available</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PANEL 2: STAINLESS STEEL -->
+        <div class="cap-panel" id="panel-stainless">
+          <div class="panel-grid">
+            <div class="panel-info">
+              <h3>A2 (304) &amp; A4 (316) Marine Grade Stainless</h3>
+              <p>Exceptional corrosion resistance for coastal marine installations, food processing cleanrooms, chemical plants, and architectural glass/steel fabrications.</p>
+              <ul class="spec-list">
+                <li><strong>A4-80 High Strength Marine:</strong> 800 N/mm² minimum tensile for high salinity immersion</li>
+                <li><strong>A2-70 Commercial Stainless:</strong> Ideal for food grade, hygiene, and architectural work</li>
+                <li><strong>Fastener Types:</strong> Hex bolts, socket screws, dome nuts, spring washers, studding</li>
+                <li><strong>Super Duplex Alloys:</strong> 2507 &amp; 2205 available for deep subsea and petrochemical</li>
+              </ul>
+              <div class="panel-cta">
+                <a href="contact.html#enquiry" class="btn btn-primary">Request Marine Fastener Schedule</a>
+              </div>
+            </div>
+            <div class="panel-card-accent">
+              <div class="accent-box">
+                <span class="accent-title">CORROSION RESISTANCE</span>
+                <div class="accent-row"><span>Grade A2:</span> <strong>AISI 304 (18/8 Chrome-Nickel)</strong></div>
+                <div class="accent-row"><span>Grade A4:</span> <strong>AISI 316 (2-3% Molybdenum)</strong></div>
+                <div class="accent-row"><span>Magnetic Permeability:</span> <strong>Non-Magnetic</strong></div>
+                <div class="accent-row"><span>Standards:</span> <strong>ISO 3506-1 / DIN 267-11</strong></div>
+                <div class="accent-badge-pill">Salt-Spray Tested &amp; Approved</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PANEL 3: BEARINGS -->
+        <div class="cap-panel" id="panel-bearings">
+          <div class="panel-grid">
+            <div class="panel-info">
+              <h3>Industrial Bearings &amp; Power Transmission</h3>
+              <p>We stock and distribute a comprehensive catalogue of precision rotating elements, drive belts, and transmission components for industrial machinery and plant maintenance.</p>
+              <ul class="spec-list">
+                <li><strong>Deep Groove Ball Bearings:</strong> Single and double row, open, 2RS rubber sealed, ZZ metal shielded</li>
+                <li><strong>Taper &amp; Spherical Roller Bearings:</strong> High-load industrial gearboxes, crushers, and pumps</li>
+                <li><strong>Mounted Units:</strong> Pillow block bearings, 2-bolt &amp; 4-bolt flanged cartridge housings</li>
+                <li><strong>Transmission:</strong> V-belts, timing belts, taper lock bushes, and sprockets</li>
+              </ul>
+              <div class="panel-cta">
+                <a href="contact.html#enquiry" class="btn btn-primary">Request Bearing Cross-Reference</a>
+              </div>
+            </div>
+            <div class="panel-card-accent">
+              <div class="accent-box">
+                <span class="accent-title">ROTATING PLANT BRANDS</span>
+                <div class="accent-row"><span>Brands Distributed:</span> <strong>SKF, FAG, NSK, Timken, NTN</strong></div>
+                <div class="accent-row"><span>Clearance Grades:</span> <strong>C2, CN, C3, C4 High Radial</strong></div>
+                <div class="accent-row"><span>Precision:</span> <strong>ABEC-1 to ABEC-7</strong></div>
+                <div class="accent-row"><span>Lubrication:</span> <strong>High Temp Synthetic / Food-Grade</strong></div>
+                <div class="accent-badge-pill">Emergency Breakdown Dispatch</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PANEL 4: NUTS & WASHERS -->
+        <div class="cap-panel" id="panel-nuts">
+          <div class="panel-grid">
+            <div class="panel-info">
+              <h3>Nuts, Washers, Pins &amp; Retaining Hardware</h3>
+              <p>Prevailing-torque locking fasteners and precision washers to prevent critical dynamic vibration loosening in harsh environments.</p>
+              <ul class="spec-list">
+                <li><strong>Self-Locking Nuts:</strong> Nyloc (DIN 985), Cleveloc all-metal, Philidas high-temperature</li>
+                <li><strong>Standard Nuts:</strong> Full Hex (DIN 934), Lock Nuts (DIN 439), Wing Nuts, Dome Nuts, Flange Nuts</li>
+                <li><strong>Washers:</strong> BS 4320 Form A, B, C, G; Nord-Lock wedge-locking; Belleville disc springs</li>
+                <li><strong>Pins &amp; Retaining:</strong> Split cotter pins, spring tension roll pins, hardened &amp; ground dowels</li>
+              </ul>
+              <div class="panel-cta">
+                <a href="contact.html#enquiry" class="btn btn-primary">Enquire on Fastener Hardware</a>
+              </div>
+            </div>
+            <div class="panel-card-accent">
+              <div class="accent-box">
+                <span class="accent-title">LOCKING INTEGRITY</span>
+                <div class="accent-row"><span>Nyloc Temp Range:</span> <strong>-50°C to +120°C</strong></div>
+                <div class="accent-row"><span>All-Metal Cleveloc:</span> <strong>Up to +300°C</strong></div>
+                <div class="accent-row"><span>Thread Types:</span> <strong>Coarse, Fine, BSW, UNC, UNF</strong></div>
+                <div class="accent-row"><span>Vibration:</span> <strong>DIN 25201 Junker Test Compliant</strong></div>
+                <div class="accent-badge-pill">Bulk Pack &amp; Bin Stocking</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PANEL 5: ADHESIVES -->
+        <div class="cap-panel" id="panel-adhesives">
+          <div class="panel-grid">
+            <div class="panel-info">
+              <h3>Official Loctite Industrial Adhesives &amp; Sealants</h3>
+              <p>COFAST is an established regional stockist of Henkel Loctite engineering compounds, providing chemical locking, retaining, and gasketing solutions.</p>
+              <ul class="spec-list">
+                <li><strong>Threadlocking Compounds:</strong> Loctite 243 (Medium Strength), Loctite 270 (High Strength Permanent)</li>
+                <li><strong>Retaining Compounds:</strong> Loctite 648 &amp; 641 for bearings, cylindrical joints, and keyways</li>
+                <li><strong>Thread Sealants:</strong> Loctite 577 for high-pressure hydraulic, pneumatic, and gas pipes</li>
+                <li><strong>Instant Cyanoacrylates:</strong> Loctite 401 &amp; 406 for rapid multi-material bonding</li>
+              </ul>
+              <div class="panel-cta">
+                <a href="contact.html#enquiry" class="btn btn-primary">Check Loctite Stocks</a>
+              </div>
+            </div>
+            <div class="panel-card-accent">
+              <div class="accent-box">
+                <span class="accent-title">HENKEL LOCTITE PARTNERSHIP</span>
+                <div class="accent-row"><span>Freshness:</span> <strong>Direct Factory Batch Monitored</strong></div>
+                <div class="accent-row"><span>Approvals:</span> <strong>WRAS (Potable Water), DVGW Gas</strong></div>
+                <div class="accent-row"><span>Bottle Sizes:</span> <strong>10ml, 50ml, 250ml In Stock</strong></div>
+                <div class="accent-row"><span>Technical Support:</span> <strong>Henkel Certified Application Data</strong></div>
+                <div class="accent-badge-pill">Safety Data Sheets (SDS) Provided</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PANEL 6: CNC SPECIALS -->
+        <div class="cap-panel" id="panel-specials_cat">
+          <div class="panel-grid">
+            <div class="panel-info">
+              <h3>Special Bar-Turned Components &amp; Exotic Alloys</h3>
+              <p>When off-the-shelf fasteners cannot meet your engineering drawings, we machine custom parts to your exact dimensional tolerances.</p>
+              <ul class="spec-list">
+                <li><strong>Machined to CAD:</strong> Turned from customer drawings, samples, or obsolete part specifications</li>
+                <li><strong>Exotic Alloys:</strong> Inconel 625 &amp; 718, Monel 400 &amp; K500, Hastelloy, Titanium Gr2/5, Phosphor Bronze</li>
+                <li><strong>Specialist Structural:</strong> Lindapter girder clamps, hollo-bolts, and Helicoil wire inserts</li>
+                <li><strong>Batch Runs:</strong> Prototype single units through to scheduled OEM production runs</li>
+              </ul>
+              <div class="panel-cta">
+                <a href="specials.html" class="btn btn-primary">Learn More About CNC Specials</a>
+              </div>
+            </div>
+            <div class="panel-card-accent">
+              <div class="accent-box">
+                <span class="accent-title">CUSTOM MACHINING</span>
+                <div class="accent-row"><span>Tolerances:</span> <strong>Down to ±0.01mm</strong></div>
+                <div class="accent-row"><span>Bar Capacity:</span> <strong>3mm to 120mm Diameter</strong></div>
+                <div class="accent-row"><span>Materials:</span> <strong>Ferrous, Non-Ferrous, Superalloys</strong></div>
+                <div class="accent-row"><span>Quality:</span> <strong>Full CMM Dimensional Inspection</strong></div>
+                <div class="accent-badge-pill">Fast Prototypes &amp; Short Runs</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-col brand-col">
+        <div class="brand footer-brand">
+          <div class="brand-icon">
+            <svg width="24" height="24" viewBox="0 0 32 32" fill="none">
+              <polygon points="16,2 29,9.5 29,22.5 16,30 3,22.5 3,9.5" stroke="currentColor" stroke-width="2.5" fill="none"/>
+              <circle cx="16" cy="16" r="6" stroke="currentColor" stroke-width="2.5"/>
+            </svg>
+          </div>
+          <span class="brand-title">COFAST</span>
+        </div>
+        <p class="footer-desc">
+          Company Fasteners Limited. Supplying precision threaded fasteners, bearings, transmission components, and industrial adhesives to leading manufacturers across the South West, the UK, and internationally.
+        </p>
+        <div class="cert-row">
+          <span class="c-badge">BS EN ISO 9001 Registered</span>
+          <span class="c-badge">Defence Standards 02-862</span>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h5 class="footer-heading">Principal Products</h5>
+        <ul class="footer-links">
+          <li><a href="products.html">High Tensile Bolts (8.8, 10.9, 12.9)</a></li>
+          <li><a href="products.html">Socket Head Screws &amp; Set Screws</a></li>
+          <li><a href="products.html">A2 &amp; A4-80 Marine Stainless</a></li>
+          <li><a href="products.html">Ball &amp; Roller Bearings (SKF / FAG)</a></li>
+          <li><a href="products.html">Nyloc &amp; Philidas All-Metal Nuts</a></li>
+          <li><a href="products.html">Henkel Loctite Adhesives</a></li>
+          <li><a href="products.html">Lindapter Structural Clamps</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5 class="footer-heading">Specialist Services</h5>
+        <ul class="footer-links">
+          <li><a href="kanban.html">KANBAN Direct-to-Line Supply</a></li>
+          <li><a href="kanban.html">Customer Part SKU Indexing</a></li>
+          <li><a href="specials.html">Bespoke CNC Bar Turning</a></li>
+          <li><a href="specials.html">Exotic Metals (Inconel, Monel)</a></li>
+          <li><a href="standards.html">Defence Standard Conformance</a></li>
+          <li><a href="contact.html">Plymouth Trade Counter</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5 class="footer-heading">Direct Contact</h5>
+        <p class="f-contact-line"><strong>Telephone:</strong> +44 (0)1752 344321</p>
+        <p class="f-contact-line"><strong>Facsimile:</strong> +44 (0)1752 340369</p>
+        <p class="f-contact-line"><strong>Email:</strong> enq321@cofast.co.uk</p>
+        <p class="f-contact-line"><strong>Address:</strong> 41 Valley Rd, Plympton, Plymouth, Devon PL7 1RF</p>
+        <a href="contact.html#enquiry" class="btn btn-secondary btn-sm" style="margin-top: 14px;">Contact Technical Desk</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-container">
+        <div>&copy; 2026 Company Fasteners Limited (COFAST). All rights reserved. Registered in England &amp; Wales.</div>
+        <div class="bottom-legal-links">
+          <a href="#">Quality Policy</a>
+          <a href="#">Terms &amp; Conditions</a>
+          <a href="#">Privacy Notice</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

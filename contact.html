@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us & Trade Counter | COFAST Plymouth Hub</title>
+  <meta name="description" content="Contact Company Fasteners Ltd (COFAST) in Plympton, Plymouth. Trade counter open 08:00 - 17:00. Telephone +44 (0)1752 344321, email enq321@cofast.co.uk.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="light-theme">
+
+  <!-- TOP BAR -->
+  <div class="top-bar">
+    <div class="container top-bar-container">
+      <div class="top-info">
+        <span class="hub-status"><span class="pulse-indicator"></span> Plymouth Logistics Hub Active</span>
+        <span class="divider">|</span>
+        <span>A38 Expressway Corridor &bull; Same-Day Despatch</span>
+        <span class="divider">|</span>
+        <span class="iso-tag">BS EN ISO 9001 Registered</span>
+      </div>
+      <div class="top-contact">
+        <a href="tel:+441752344321" class="top-link phone-highlight">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Trade Desk: +44 (0)1752 344321
+        </a>
+        <a href="mailto:enq321@cofast.co.uk" class="top-link">enq321@cofast.co.uk</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="brand">
+        <div class="brand-icon">
+          <svg width="28" height="28" viewBox="0 0 32 32" fill="none">
+            <polygon points="16,2 29,9.5 29,22.5 16,30 3,22.5 3,9.5" stroke="currentColor" stroke-width="2.5" fill="none"/>
+            <circle cx="16" cy="16" r="6" stroke="currentColor" stroke-width="2.5"/>
+            <circle cx="16" cy="16" r="2" fill="currentColor"/>
+          </svg>
+        </div>
+        <div class="brand-details">
+          <span class="brand-title">COFAST</span>
+          <span class="brand-subtitle">COMPANY FASTENERS LTD</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu">
+        <a href="about.html" class="nav-item">About Us</a>
+        <a href="products.html" class="nav-item">Product Ranges</a>
+        <a href="kanban.html" class="nav-item">KANBAN &amp; Supply</a>
+        <a href="specials.html" class="nav-item">CNC Specials</a>
+        <a href="standards.html" class="nav-item">Standards &amp; Defence</a>
+        <a href="contact.html" class="nav-item active">Contact &amp; Location</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#enquiry" class="btn btn-primary nav-cta">
+          Request Technical Quote
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+        <button class="mobile-toggle" aria-label="Toggle Navigation" onclick="toggleMenu()">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero-content gs-reveal">
+        <div class="section-label">PLYMOUTH LOGISTICS HUB</div>
+        <h1 class="page-hero-title">Contact Us &amp; Trade Counter</h1>
+        <p class="page-hero-lead">
+          Our trade counter and sales engineering desk are open Monday through Friday, 08:00 – 17:00. Fast telephone orders and counter collections available in minutes.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOCATION & CONTACT DETAILS -->
+  <section class="section location-section">
+    <div class="container">
+      <div class="grid-2-col">
+        <div class="location-details gs-fade-up">
+          <div class="section-label">HEAD OFFICE &amp; LOGISTICS CENTRE</div>
+          <h2 class="section-heading">Immediate Access on the A38 Expressway Corridor</h2>
+          <p class="body-text">
+            Company Fasteners Limited operates from Valley Road Industrial Estate in Plympton, Plymouth, with dedicated loading bays, commercial customer parking, and direct expressway links.
+          </p>
+
+          <div class="contact-card">
+            <div class="c-line">
+              <div class="c-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <strong>Sales &amp; Registered Office:</strong>
+                <p>41 Valley Road Industrial Estate, Plympton, Plymouth, Devon PL7 1RF</p>
+              </div>
+            </div>
+
+            <div class="c-line">
+              <div class="c-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <div>
+                <strong>Trade Counter Opening Hours:</strong>
+                <p>Monday to Friday: 08:00 – 17:00 (Collections ready in minutes)</p>
+              </div>
+            </div>
+
+            <div class="c-line">
+              <div class="c-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div>
+                <strong>Telephone Direct:</strong>
+                <p><a href="tel:+441752344321" class="c-phone-link">+44 (0)1752 344321</a></p>
+              </div>
+            </div>
+
+            <div class="c-line">
+              <div class="c-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+              </div>
+              <div>
+                <strong>Facsimile Transmission:</strong>
+                <p>+44 (0)1752 340369</p>
+              </div>
+            </div>
+
+            <div class="c-line">
+              <div class="c-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div>
+                <strong>Direct Sales Email:</strong>
+                <p><a href="mailto:enq321@cofast.co.uk" class="c-email-link">enq321@cofast.co.uk</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="location-map-col gs-fade-up">
+          <div class="map-card-wrapper">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2545.986877239331!2d-4.048995523448375!3d50.38541297157989!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486ceb5329c31321%3A0x6b63d76b1f20a597!2sValley%20Rd%2C%20Plympton%2C%20Plymouth%20PL7%201RF%2C%20UK!5e0!3m2!1sen!2suk!4v1700000000000!5m2!1sen!2suk" 
+              width="100%" 
+              height="380" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            <div class="map-callout">
+              <span class="pulse-pin"></span>
+              <span>Direct A38 Access &bull; Customer Parking &amp; Loading Bay Available</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ONLINE TECHNICAL ENQUIRY FORM -->
+  <section class="section enquiry-section" id="enquiry">
+    <div class="container">
+      <div class="enquiry-card-wrapper gs-fade-up">
+        <div class="enquiry-header">
+          <div class="section-label">ONLINE TECHNICAL ENQUIRY FORM</div>
+          <h2 class="section-heading">Request a Rapid Technical Quotation</h2>
+          <p class="enquiry-desc">
+            Submit your part specifications, bulk schedule, or engineering drawings. Our technical desk in Plymouth typically responds within <strong>60 minutes</strong>.
+          </p>
+        </div>
+
+        <form class="brochure-form" onsubmit="handleBrochureSubmit(event)">
+          <div class="form-grid">
+            <div class="form-group">
+              <label>Your Name *</label>
+              <input type="text" id="enqName" required placeholder="e.g. John Henderson">
+            </div>
+
+            <div class="form-group">
+              <label>Company / Organization *</label>
+              <input type="text" id="enqCompany" required placeholder="e.g. Babcock Marine / Devon Precision">
+            </div>
+
+            <div class="form-group">
+              <label>Business Email *</label>
+              <input type="email" id="enqEmail" required placeholder="name@company.co.uk">
+            </div>
+
+            <div class="form-group">
+              <label>Telephone Number *</label>
+              <input type="tel" id="enqPhone" required placeholder="+44 (0)1752 ...">
+            </div>
+
+            <div class="form-group">
+              <label>Service / Product Requirement</label>
+              <select id="enqService">
+                <option value="standard">Standard Fasteners &amp; Fixings Schedule</option>
+                <option value="bearings">Bearings &amp; Transmission Products</option>
+                <option value="kanban">KANBAN / Line-Side Bin Stocking Service</option>
+                <option value="specials">Bespoke CNC Bar-Turned Machining</option>
+                <option value="loctite">Loctite Adhesives &amp; Chemical Products</option>
+                <option value="tender">Project Bid &amp; Tender Costing</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label>Required Timescale</label>
+              <select id="enqUrgency">
+                <option value="urgent">Urgent: Same-Day / Immediate Call-Off</option>
+                <option value="standard" selected>Standard Production: 2–3 Days</option>
+                <option value="scheduled">Scheduled Forward Call-Off</option>
+                <option value="general">General Price &amp; Capability Enquiry</option>
+              </select>
+            </div>
+
+            <div class="form-group full-width">
+              <label>Specification, Quantities or Customer Part Numbers *</label>
+              <textarea id="enqDetails" rows="4" required placeholder="List your required fasteners, standards (DIN 912, A4-80, M12x50), quantities, internal drawing numbers, or technical questions..."></textarea>
+            </div>
+          </div>
+
+          <div class="form-footer-row">
+            <div class="file-box">
+              <label class="file-attach-btn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"/></svg>
+                <span id="fileLabelText">Attach Technical Drawing / BOM (PDF, DWG, STEP)</span>
+                <input type="file" id="enqFile" onchange="fileAttached(this)" style="display:none;">
+              </label>
+              <span class="file-info-text">Max 25MB &bull; 100% Confidential</span>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-submit">
+              Send Enquiry to Plymouth Desk
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </button>
+          </div>
+
+          <div id="enqSuccess" class="form-success-banner" style="display:none;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            <div>
+              <strong>Enquiry Received by Trade Desk</strong>
+              <p>Thank you. Your technical requirement has been queued with our Plympton engineering sales team. A formal quote or technical response will be issued promptly.</p>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-col brand-col">
+        <div class="brand footer-brand">
+          <div class="brand-icon">
+            <svg width="24" height="24" viewBox="0 0 32 32" fill="none">
+              <polygon points="16,2 29,9.5 29,22.5 16,30 3,22.5 3,9.5" stroke="currentColor" stroke-width="2.5" fill="none"/>
+              <circle cx="16" cy="16" r="6" stroke="currentColor" stroke-width="2.5"/>
+            </svg>
+          </div>
+          <span class="brand-title">COFAST</span>
+        </div>
+        <p class="footer-desc">
+          Company Fasteners Limited. Supplying precision threaded fasteners, bearings, transmission components, and industrial adhesives to leading manufacturers across the South West, the UK, and internationally.
+        </p>
+        <div class="cert-row">
+          <span class="c-badge">BS EN ISO 9001 Registered</span>
+          <span class="c-badge">Defence Standards 02-862</span>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h5 class="footer-heading">Principal Products</h5>
+        <ul class="footer-links">
+          <li><a href="products.html">High Tensile Bolts (8.8, 10.9, 12.9)</a></li>
+          <li><a href="products.html">Socket Head Screws &amp; Set Screws</a></li>
+          <li><a href="products.html">A2 &amp; A4-80 Marine Stainless</a></li>
+          <li><a href="products.html">Ball &amp; Roller Bearings (SKF / FAG)</a></li>
+          <li><a href="products.html">Nyloc &amp; Philidas All-Metal Nuts</a></li>
+          <li><a href="products.html">Henkel Loctite Adhesives</a></li>
+          <li><a href="products.html">Lindapter Structural Clamps</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5 class="footer-heading">Specialist Services</h5>
+        <ul class="footer-links">
+          <li><a href="kanban.html">KANBAN Direct-to-Line Supply</a></li>
+          <li><a href="kanban.html">Customer Part SKU Indexing</a></li>
+          <li><a href="specials.html">Bespoke CNC Bar Turning</a></li>
+          <li><a href="specials.html">Exotic Metals (Inconel, Monel)</a></li>
+          <li><a href="standards.html">Defence Standard Conformance</a></li>
+          <li><a href="contact.html">Plymouth Trade Counter</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5 class="footer-heading">Direct Contact</h5>
+        <p class="f-contact-line"><strong>Telephone:</strong> +44 (0)1752 344321</p>
+        <p class="f-contact-line"><strong>Facsimile:</strong> +44 (0)1752 340369</p>
+        <p class="f-contact-line"><strong>Email:</strong> enq321@cofast.co.uk</p>
+        <p class="f-contact-line"><strong>Address:</strong> 41 Valley Rd, Plympton, Plymouth, Devon PL7 1RF</p>
+        <a href="#enquiry" class="btn btn-secondary btn-sm" style="margin-top: 14px;">Contact Technical Desk</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-container">
+        <div>&copy; 2026 Company Fasteners Limited (COFAST). All rights reserved. Registered in England &amp; Wales.</div>
+        <div class="bottom-legal-links">
+          <a href="#">Quality Policy</a>
+          <a href="#">Terms &amp; Conditions</a>
+          <a href="#">Privacy Notice</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
