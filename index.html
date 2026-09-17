@@ -6,12 +6,10 @@
   <title>COFAST | Company Fasteners Ltd | Precision Fasteners, Bearings & Engineering Supply</title>
   <meta name="description" content="Company Fasteners Ltd (COFAST) - Devon & Cornwall's premier industrial fastener distributor. Over 9,000 stocked lines, KANBAN direct-to-line supply, bespoke CNC bar turning, and BS EN ISO 9001 registration.">
   
-  <!-- Fonts: Plus Jakarta Sans & Space Grotesk -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   
-  <!-- GSAP & ScrollTrigger -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
   
@@ -19,7 +17,7 @@
 </head>
 <body class="light-theme">
 
-  <!-- TOP ANNOUNCEMENT / LOGISTICS BAR -->
+  <!-- TOP BAR -->
   <div class="top-bar">
     <div class="container top-bar-container">
       <div class="top-info">
@@ -39,10 +37,10 @@
     </div>
   </div>
 
-  <!-- NAVIGATION HEADER -->
+  <!-- NAVBAR -->
   <header class="navbar" id="navbar">
     <div class="container nav-container">
-      <a href="#" class="brand">
+      <a href="index.html" class="brand">
         <div class="brand-icon">
           <svg width="28" height="28" viewBox="0 0 32 32" fill="none">
             <polygon points="16,2 29,9.5 29,22.5 16,30 3,22.5 3,9.5" stroke="currentColor" stroke-width="2.5" fill="none"/>
@@ -66,7 +64,7 @@
       </nav>
 
       <div class="nav-actions">
-        <a href="#enquiry" class="btn btn-primary nav-cta">
+        <a href="contact.html#enquiry" class="btn btn-primary nav-cta">
           Request Technical Quote
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
         </a>
@@ -101,12 +99,12 @@
         </p>
 
         <div class="hero-cta-wrapper gs-reveal">
-          <a href="#enquiry" class="btn btn-primary btn-lg">
+          <a href="contact.html#enquiry" class="btn btn-primary btn-lg">
             Consult With Our Engineering Desk
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
           </a>
-          <a href="#capabilities" class="btn btn-secondary btn-lg">
-            Explore Capabilities &amp; Catalog
+          <a href="products.html" class="btn btn-secondary btn-lg">
+            Explore 9,000+ Stock Lines
           </a>
         </div>
 
@@ -134,56 +132,30 @@
         </div>
       </div>
 
-      <!-- INTERACTIVE 3D/HERO VISUAL SHOWCASE -->
+      <!-- HERO VISUAL WITH PHOTOREALISTIC HUMAN TOUCH -->
       <div class="hero-visual gs-visual">
-        <div class="spec-card">
-          <div class="spec-card-header">
-            <div class="tech-tag">PLYMOUTH INVENTORY DISPATCH</div>
-            <span class="badge-status">In-Stock</span>
-          </div>
-
-          <div class="spec-item-feature">
-            <div class="feature-icon-box">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polygon points="12,2 21,7.5 21,16.5 12,22 3,16.5 3,7.5"/><circle cx="12" cy="12" r="3.5"/></svg>
-            </div>
-            <div class="feature-info">
-              <h4>Grade 12.9 High Tensile Fasteners</h4>
-              <p>DIN 912 &bull; ISO 4762 &bull; Zinc Flake &amp; Self Colour</p>
+        <div class="hero-image-card">
+          <div class="image-wrapper">
+            <img src="images/warehouse-hero.jpg" alt="COFAST Engineer in Logistics Hub reviewing inventory" class="img-responsive hero-img">
+            <div class="img-overlay-badge">
+              <span class="pulse-indicator"></span>
+              <span>Plymouth 600m² Logistics Hub &bull; 9,000+ Lines In Stock</span>
             </div>
           </div>
-
-          <div class="spec-detail-grid">
-            <div class="spec-chip">
-              <span class="spec-chip-label">Standards</span>
-              <span class="spec-chip-val">BS, DIN, ISO, SAE</span>
+          <div class="hero-card-bottom">
+            <div class="hub-mini-info">
+              <div class="mini-stat">
+                <strong>Same-Day</strong>
+                <span>Despatch Cutoff 3:30PM</span>
+              </div>
+              <div class="mini-stat">
+                <strong>BS EN ISO 9001</strong>
+                <span>Registered Quality</span>
+              </div>
             </div>
-            <div class="spec-chip">
-              <span class="spec-chip-label">Materials</span>
-              <span class="spec-chip-val">A2/A4, Inconel, Brass</span>
-            </div>
-            <div class="spec-chip">
-              <span class="spec-chip-label">Traceability</span>
-              <span class="spec-chip-val">3.1 Mill Certs</span>
-            </div>
-            <div class="spec-chip">
-              <span class="spec-chip-label">Supply Mode</span>
-              <span class="spec-chip-val">Direct KANBAN Bins</span>
-            </div>
-          </div>
-
-          <div class="client-quote-mini">
-            <div class="quote-text">
-              "The leading fastener distributor within the South West. Their rapid response service allows us to operate with reduced stocks without compromising production."
-            </div>
-            <div class="quote-by">
-              <strong>Mr J. Rice</strong> &bull; Rittal - CSM Ltd
-            </div>
-          </div>
-
-          <div class="card-footer-action">
             <a href="tel:+441752344321" class="btn-fast-dial">
               <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-              Immediate Call-Off: 01752 344321
+              Trade Desk Hotline: 01752 344321
             </a>
           </div>
         </div>
@@ -196,79 +168,85 @@
     <div class="container trust-container">
       <span class="trust-title">SUPPLYING CRITICAL INDUSTRIES NATIONWIDE &amp; INTERNATIONALLY</span>
       <div class="trust-grid">
-        <div class="trust-item"><span class="dot"></span> DEFENCE &amp; NAVAL DOCKYARDS</div>
+        <div class="trust-item"><span class="dot"></span> DEFENCE &amp; ROYAL NAVY DOCKYARDS</div>
         <div class="trust-item"><span class="dot"></span> DEFENCE STANDARD 02-862</div>
-        <div class="trust-item"><span class="dot"></span> PETROCHEMICAL &amp; OFFSHORE</div>
-        <div class="trust-item"><span class="dot"></span> HIGH-INTEGRITY OEM MANUFACTURING</div>
-        <div class="trust-item"><span class="dot"></span> MARINE &amp; SHIP REPAIR</div>
-        <div class="trust-item"><span class="dot"></span> NUCLEAR &amp; POWER GENERATION</div>
+        <div class="trust-item"><span class="dot"></span> OFFSHORE ENERGY &amp; PETROCHEMICAL</div>
+        <div class="trust-item"><span class="dot"></span> PRECISION OEM ASSEMBLY</div>
+        <div class="trust-item"><span class="dot"></span> MARINE FABRICATION &amp; SHIPYARDS</div>
+        <div class="trust-item"><span class="dot"></span> NUCLEAR POWER &amp; AEROSPACE</div>
       </div>
     </div>
   </section>
 
-  <!-- ABOUT / COMPANY PROFILE SECTION -->
-  <section class="section about-section" id="about">
+  <!-- VISUAL CAPABILITY SHOWCASE (IMAGE + STATS) -->
+  <section class="section" style="background: #ffffff; border-bottom: 1px solid var(--border-light);">
     <div class="container">
       <div class="grid-2-col">
-        <div class="about-text-col gs-fade-up">
-          <div class="section-label">A COMMITMENT TO TOTAL SERVICE</div>
-          <h2 class="section-heading">Over a Quarter Century of Engineering Excellence in Plymouth</h2>
-          <p class="section-intro">
-            Company Fasteners Limited (COFAST) is the premier independent distributor of precision fasteners, bearings, and transmission hardware in the South West. 
-          </p>
+        <div class="gs-fade-up">
+          <div class="image-wrapper rounded-lg shadow-hover">
+            <img src="images/fasteners-macro.jpg" alt="Precision High Tensile Stainless Fasteners and Bearings" class="img-responsive">
+          </div>
+        </div>
+        <div class="gs-fade-up">
+          <div class="section-label">UNRIVALLED INVENTORY</div>
+          <h2 class="section-heading">Over 9,000 Stocked Lines Ready for Immediate Call-Off</h2>
           <p class="body-text">
-            From our modern <strong>600m² logistics facility</strong> in Plympton, positioned directly off the A38 expressway, we provide immediate arterial connectivity into Devon, Cornwall, Somerset, and national carrier networks.
+            From Grade 8.8, 10.9, and 12.9 high tensile structural bolts to A4-80 marine grade stainless fixings, SKF/FAG rotating bearings, and certified Henkel Loctite adhesives—we stock the largest independent range in Devon and Cornwall.
           </p>
-          <p class="body-text">
-            As a <strong>BS EN ISO 9001 registered company</strong>, we don't just supply off-the-shelf components—we advise chief engineers and procurement directors on safety-critical metallurgy, compliance with Defence Standards 02-862, and customized supply chain integration.
-          </p>
+          <ul class="spec-list" style="margin: 24px 0;">
+            <li><strong>Full Thread Standard Coverage:</strong> Metric (Coarse &amp; Fine), UNC, UNF, BSF, and British Standard Whitworth (BSW)</li>
+            <li><strong>Traceable Quality:</strong> EN 10204 3.1 chemical and mechanical inspection certificates provided with orders</li>
+            <li><strong>Rapid Trade Counter:</strong> In-person trade collections from our Plympton counter ready within 15 minutes</li>
+          </ul>
+          <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+            <a href="products.html" class="btn btn-primary">Browse Product Ranges</a>
+            <a href="contact.html#enquiry" class="btn btn-secondary">Request Fasteners Schedule</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-          <div class="highlights-grid">
+  <!-- KANBAN & WORKSHOP WITH HUMAN TOUCH PHOTO -->
+  <section class="section" style="background: var(--bg-canvas); border-bottom: 1px solid var(--border-light);">
+    <div class="container">
+      <div class="grid-2-col">
+        <div class="gs-fade-up">
+          <div class="section-label">VENDOR-MANAGED INVENTORY</div>
+          <h2 class="section-heading">Zero Downtime: KANBAN Direct-to-Line Replenishment</h2>
+          <p class="body-text">
+            Avoid costly line-stoppages and free up valuable factory floor space. Our supply engineers visit your facility, scan depleted bins, and replenish stock directly to line side without inspection bottlenecks.
+          </p>
+          
+          <div class="highlights-grid" style="margin: 24px 0;">
             <div class="highlight-box">
               <div class="h-icon">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
               </div>
               <div>
-                <h5>ISO 9001 Registered</h5>
-                <p>Audited quality management with full lot traceability &amp; 3.1 mill certs.</p>
+                <h5>Consignment Bins</h5>
+                <p>Pre-labelled with your internal part codes to eliminate duplicate stocking.</p>
               </div>
             </div>
-
             <div class="highlight-box">
               <div class="h-icon">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 14 14"/></svg>
               </div>
               <div>
-                <h5>Rapid Trade Counter</h5>
-                <p>Counter collections in Plympton ready in minutes from telephone order.</p>
+                <h5>One Monthly Invoice</h5>
+                <p>Consolidated accounting replacing hundreds of individual purchase orders.</p>
               </div>
             </div>
           </div>
+
+          <a href="kanban.html" class="btn btn-primary">Learn About KANBAN Supply</a>
         </div>
 
-        <div class="about-visual-col gs-fade-up">
-          <div class="hub-card-wrapper">
-            <div class="hub-image-holder">
-              <!-- Placeholder stylized warehouse diagram / building -->
-              <div class="hub-backdrop-graphic">
-                <div class="blueprint-lines"></div>
-                <div class="facility-badge">600 SQ METRE LOGISTICS HUB &bull; PLYMPTON</div>
-                <div class="geo-coords">50.3854° N, 4.0490° W &bull; A38 CORRIDOR</div>
-              </div>
-            </div>
-            <div class="hub-stat-pills">
-              <div class="pill-stat">
-                <strong>9,000+</strong>
-                <span>Active SKUs</span>
-              </div>
-              <div class="pill-stat">
-                <strong>99.6%</strong>
-                <span>Order Accuracy</span>
-              </div>
-              <div class="pill-stat">
-                <strong>Same-Day</strong>
-                <span>Despatch Cutoff 3:30PM</span>
-              </div>
+        <div class="gs-fade-up">
+          <div class="image-wrapper rounded-lg shadow-hover">
+            <img src="images/kanban-assembly.jpg" alt="Technician scanning KANBAN inventory bin" class="img-responsive">
+            <div class="img-caption-strip">
+              <span>Direct line-side consignment management at major manufacturing plants</span>
             </div>
           </div>
         </div>
@@ -276,518 +254,46 @@
     </div>
   </section>
 
-  <!-- CAPABILITIES / PRODUCT RANGES SHOWCASE -->
-  <section class="section capabilities-section" id="capabilities">
-    <div class="container">
-      <div class="section-header-center gs-fade-up">
-        <div class="section-label">EXTENSIVE PRODUCT PORTFOLIO</div>
-        <h2 class="section-heading">Comprehensive Fastening &amp; Transmission Ranges</h2>
-        <p class="section-lead">All standards, thread forms (Metric, UNC, UNF, BSF, BSW), and exotic alloys from a single, reliable UK source.</p>
-      </div>
-
-      <!-- INTERACTIVE CAPABILITY TABS -->
-      <div class="category-tabs gs-fade-up">
-        <button class="cat-tab active" onclick="switchCategory('bolts', this)">High Tensile Bolts &amp; Screws</button>
-        <button class="cat-tab" onclick="switchCategory('stainless', this)">A2 / A4 Stainless Steel</button>
-        <button class="cat-tab" onclick="switchCategory('bearings', this)">Bearings &amp; Power Transmission</button>
-        <button class="cat-tab" onclick="switchCategory('nuts', this)">Nuts, Washers &amp; Pins</button>
-        <button class="cat-tab" onclick="switchCategory('adhesives', this)">Loctite Adhesives</button>
-        <button class="cat-tab" onclick="switchCategory('specials_cat', this)">Special Bar-Turned Parts</button>
-      </div>
-
-      <!-- DYNAMIC TAB PANELS -->
-      <div class="capability-panels gs-fade-up">
-        
-        <!-- PANEL 1: HIGH TENSILE -->
-        <div class="cap-panel active" id="panel-bolts">
-          <div class="panel-grid">
-            <div class="panel-info">
-              <h3>High Tensile Steel Bolts &amp; Set Screws</h3>
-              <p>Manufactured to exacting engineering tolerances. Suitable for safety-critical structures, automotive sub-assemblies, and heavy plant applications.</p>
-              <ul class="spec-list">
-                <li><strong>Hexagon Head Bolts &amp; Set Screws:</strong> DIN 931 / DIN 933 / ISO 4014 / ISO 4017</li>
-                <li><strong>Socket Cap, Countersunk &amp; Button Heads:</strong> DIN 912 / DIN 7991 / ISO 7380</li>
-                <li><strong>Socket Set Screws:</strong> Cup Point, Cone Point, Dog Point, Flat Point (DIN 916)</li>
-                <li><strong>Strength Classes:</strong> Grade 8.8, 10.9, and 12.9 High Tensile</li>
-                <li><strong>Finishes:</strong> Bright Zinc Plated (BZP), Geomet, Zinc Flake, Self Colour</li>
-              </ul>
-              <div class="panel-cta">
-                <a href="#enquiry" class="btn btn-primary">Enquire for High Tensile Schedule</a>
-              </div>
-            </div>
-            <div class="panel-card-accent">
-              <div class="accent-box">
-                <span class="accent-title">ENGINEERING DATA</span>
-                <div class="accent-row"><span>Tensile Strength 8.8:</span> <strong>800 N/mm²</strong></div>
-                <div class="accent-row"><span>Tensile Strength 10.9:</span> <strong>1040 N/mm²</strong></div>
-                <div class="accent-row"><span>Tensile Strength 12.9:</span> <strong>1220 N/mm²</strong></div>
-                <div class="accent-row"><span>Certification:</span> <strong>EN 10204 3.1 Traceable</strong></div>
-                <div class="accent-badge-pill">Immediate Call-Off Available</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- PANEL 2: STAINLESS STEEL -->
-        <div class="cap-panel" id="panel-stainless">
-          <div class="panel-grid">
-            <div class="panel-info">
-              <h3>A2 (304) &amp; A4 (316) Marine Grade Stainless</h3>
-              <p>Exceptional corrosion resistance for coastal marine installations, food processing cleanrooms, chemical plants, and architectural glass/steel fabrications.</p>
-              <ul class="spec-list">
-                <li><strong>A4-80 High Strength Marine:</strong> 800 N/mm² minimum tensile for high salinity immersion</li>
-                <li><strong>A2-70 Commercial Stainless:</strong> Ideal for food grade, hygiene, and architectural work</li>
-                <li><strong>Fastener Types:</strong> Hex bolts, socket screws, dome nuts, spring washers, studding</li>
-                <li><strong>Super Duplex Alloys:</strong> 2507 &amp; 2205 available for deep subsea and petrochemical</li>
-              </ul>
-              <div class="panel-cta">
-                <a href="#enquiry" class="btn btn-primary">Request Marine Fastener Schedule</a>
-              </div>
-            </div>
-            <div class="panel-card-accent">
-              <div class="accent-box">
-                <span class="accent-title">CORROSION RESISTANCE</span>
-                <div class="accent-row"><span>Grade A2:</span> <strong>AISI 304 (18/8 Chrome-Nickel)</strong></div>
-                <div class="accent-row"><span>Grade A4:</span> <strong>AISI 316 (2-3% Molybdenum)</strong></div>
-                <div class="accent-row"><span>Magnetic Permeability:</span> <strong>Non-Magnetic</strong></div>
-                <div class="accent-row"><span>Standards:</span> <strong>ISO 3506-1 / DIN 267-11</strong></div>
-                <div class="accent-badge-pill">Salt-Spray Tested &amp; Approved</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- PANEL 3: BEARINGS -->
-        <div class="cap-panel" id="panel-bearings">
-          <div class="panel-grid">
-            <div class="panel-info">
-              <h3>Industrial Bearings &amp; Power Transmission</h3>
-              <p>We stock and distribute a comprehensive catalogue of precision rotating elements, drive belts, and transmission components for industrial machinery and plant maintenance.</p>
-              <ul class="spec-list">
-                <li><strong>Deep Groove Ball Bearings:</strong> Single and double row, open, 2RS rubber sealed, ZZ metal shielded</li>
-                <li><strong>Taper &amp; Spherical Roller Bearings:</strong> High-load industrial gearboxes, crushers, and pumps</li>
-                <li><strong>Mounted Units:</strong> Pillow block bearings, 2-bolt &amp; 4-bolt flanged cartridge housings</li>
-                <li><strong>Transmission:</strong> V-belts, timing belts, taper lock bushes, and sprockets</li>
-              </ul>
-              <div class="panel-cta">
-                <a href="#enquiry" class="btn btn-primary">Request Bearing Cross-Reference</a>
-              </div>
-            </div>
-            <div class="panel-card-accent">
-              <div class="accent-box">
-                <span class="accent-title">ROTATING PLANT BRANDS</span>
-                <div class="accent-row"><span>Brands Distributed:</span> <strong>SKF, FAG, NSK, Timken, NTN</strong></div>
-                <div class="accent-row"><span>Clearance Grades:</span> <strong>C2, CN, C3, C4 High Radial</strong></div>
-                <div class="accent-row"><span>Precision:</span> <strong>ABEC-1 to ABEC-7</strong></div>
-                <div class="accent-row"><span>Lubrication:</span> <strong>High Temp Synthetic / Food-Grade</strong></div>
-                <div class="accent-badge-pill">Emergency Breakdown Dispatch</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- PANEL 4: NUTS, WASHERS & PINS -->
-        <div class="cap-panel" id="panel-nuts">
-          <div class="panel-grid">
-            <div class="panel-info">
-              <h3>Nuts, Washers, Pins &amp; Retaining Hardware</h3>
-              <p>Prevailing-torque locking fasteners and precision washers to prevent critical dynamic vibration loosening in harsh environments.</p>
-              <ul class="spec-list">
-                <li><strong>Self-Locking Nuts:</strong> Nyloc (DIN 985), Cleveloc all-metal, Philidas high-temperature</li>
-                <li><strong>Standard Nuts:</strong> Full Hex (DIN 934), Lock Nuts (DIN 439), Wing Nuts, Dome Nuts, Flange Nuts</li>
-                <li><strong>Washers:</strong> BS 4320 Form A, B, C, G; Nord-Lock wedge-locking; Belleville disc springs</li>
-                <li><strong>Pins &amp; Retaining:</strong> Split cotter pins, spring tension roll pins, hardened &amp; ground dowels</li>
-              </ul>
-              <div class="panel-cta">
-                <a href="#enquiry" class="btn btn-primary">Enquire on Fastener Hardware</a>
-              </div>
-            </div>
-            <div class="panel-card-accent">
-              <div class="accent-box">
-                <span class="accent-title">LOCKING INTEGRITY</span>
-                <div class="accent-row"><span>Nyloc Temp Range:</span> <strong>-50°C to +120°C</strong></div>
-                <div class="accent-row"><span>All-Metal Cleveloc:</span> <strong>Up to +300°C</strong></div>
-                <div class="accent-row"><span>Thread Types:</span> <strong>Coarse, Fine, BSW, UNC, UNF</strong></div>
-                <div class="accent-row"><span>Vibration:</span> <strong>DIN 25201 Junker Test Compliant</strong></div>
-                <div class="accent-badge-pill">Bulk Pack &amp; Bin Stocking</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- PANEL 5: ADHESIVES -->
-        <div class="cap-panel" id="panel-adhesives">
-          <div class="panel-grid">
-            <div class="panel-info">
-              <h3>Official Loctite Industrial Adhesives &amp; Sealants</h3>
-              <p>COFAST is an established regional stockist of Henkel Loctite engineering compounds, providing chemical locking, retaining, and gasketing solutions.</p>
-              <ul class="spec-list">
-                <li><strong>Threadlocking Compounds:</strong> Loctite 243 (Medium Strength), Loctite 270 (High Strength Permanent)</li>
-                <li><strong>Retaining Compounds:</strong> Loctite 648 &amp; 641 for bearings, cylindrical joints, and keyways</li>
-                <li><strong>Thread Sealants:</strong> Loctite 577 for high-pressure hydraulic, pneumatic, and gas pipes</li>
-                <li><strong>Instant Cyanoacrylates:</strong> Loctite 401 &amp; 406 for rapid multi-material bonding</li>
-              </ul>
-              <div class="panel-cta">
-                <a href="#enquiry" class="btn btn-primary">Check Loctite Stocks</a>
-              </div>
-            </div>
-            <div class="panel-card-accent">
-              <div class="accent-box">
-                <span class="accent-title">HENKEL LOCTITE PARTNERSHIP</span>
-                <div class="accent-row"><span>Freshness:</span> <strong>Direct Factory Batch Monitored</strong></div>
-                <div class="accent-row"><span>Approvals:</span> <strong>WRAS (Potable Water), DVGW Gas</strong></div>
-                <div class="accent-row"><span>Bottle Sizes:</span> <strong>10ml, 50ml, 250ml In Stock</strong></div>
-                <div class="accent-row"><span>Technical Support:</span> <strong>Henkel Certified Application Data</strong></div>
-                <div class="accent-badge-pill">Safety Data Sheets (SDS) Provided</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- PANEL 6: CNC SPECIALS -->
-        <div class="cap-panel" id="panel-specials_cat">
-          <div class="panel-grid">
-            <div class="panel-info">
-              <h3>Special Bar-Turned Components &amp; Exotic Alloys</h3>
-              <p>When off-the-shelf fasteners cannot meet your engineering drawings, we machine custom parts to your exact dimensional tolerances.</p>
-              <ul class="spec-list">
-                <li><strong>Machined to CAD:</strong> Turned from customer drawings, samples, or obsolete part specifications</li>
-                <li><strong>Exotic Alloys:</strong> Inconel 625 &amp; 718, Monel 400 &amp; K500, Hastelloy, Titanium Gr2/5, Phosphor Bronze</li>
-                <li><strong>Specialist Structural:</strong> Lindapter girder clamps, hollo-bolts, and Helicoil wire inserts</li>
-                <li><strong>Batch Runs:</strong> Prototype single units through to scheduled OEM production runs</li>
-              </ul>
-              <div class="panel-cta">
-                <a href="#enquiry" class="btn btn-primary">Upload Engineering Drawing</a>
-              </div>
-            </div>
-            <div class="panel-card-accent">
-              <div class="accent-box">
-                <span class="accent-title">CUSTOM MACHINING</span>
-                <div class="accent-row"><span>Tolerances:</span> <strong>Down to ±0.01mm</strong></div>
-                <div class="accent-row"><span>Bar Capacity:</span> <strong>3mm to 120mm Diameter</strong></div>
-                <div class="accent-row"><span>Materials:</span> <strong>Ferrous, Non-Ferrous, Superalloys</strong></div>
-                <div class="accent-row"><span>Quality:</span> <strong>Full CMM Dimensional Inspection</strong></div>
-                <div class="accent-badge-pill">Fast Prototypes &amp; Short Runs</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- KANBAN & INVENTORY MANAGEMENT SECTION -->
-  <section class="section kanban-section" id="kanban">
+  <!-- QUALITY & HUMAN INSPECTION LAB SECTION -->
+  <section class="section" style="background: #ffffff; border-bottom: 1px solid var(--border-light);">
     <div class="container">
       <div class="grid-2-col">
-        <div class="kanban-visual gs-fade-up">
-          <div class="kanban-diagram-card">
-            <div class="diagram-badge">SEAMLESS LEAN MANUFACTURING</div>
-            <h4 class="diagram-title">The COFAST KANBAN Supply Cycle</h4>
-            
-            <div class="workflow-steps">
-              <div class="w-step">
-                <div class="w-step-num">01</div>
-                <div class="w-step-info">
-                  <strong>Consignment Bin Stocking</strong>
-                  <p>Pre-labelled bins installed at line side with your internal part numbers.</p>
-                </div>
-              </div>
-              <div class="w-step">
-                <div class="w-step-num">02</div>
-                <div class="w-step-info">
-                  <strong>Automated Bin Scanning &amp; Call-Off</strong>
-                  <p>Regular scheduled visits by COFAST technicians or automated electronic scan replenishment.</p>
-                </div>
-              </div>
-              <div class="w-step">
-                <div class="w-step-num">03</div>
-                <div class="w-step-info">
-                  <strong>Direct-to-Line Replenishment</strong>
-                  <p>Stock delivered straight to the shopfloor workstation without goods-in inspection delays.</p>
-                </div>
-              </div>
-              <div class="w-step">
-                <div class="w-step-num">04</div>
-                <div class="w-step-info">
-                  <strong>Consolidated Monthly Invoicing</strong>
-                  <p>One unified monthly statement, minimizing accounting paperwork and purchase orders.</p>
-                </div>
-              </div>
+        <div class="gs-fade-up">
+          <div class="image-wrapper rounded-lg shadow-hover">
+            <img src="images/engineer-inspection.jpg" alt="Quality engineer measuring precision CNC turned component" class="img-responsive">
+            <div class="img-caption-strip">
+              <span>Full dimensional CMM inspection &amp; BS EN ISO 9001 audited procedures</span>
             </div>
           </div>
         </div>
 
-        <div class="kanban-text gs-fade-up">
-          <div class="section-label">MANAGED INVENTORY SERVICES</div>
-          <h2 class="section-heading">Eliminate Production Downtime with Direct Line-Side Stocking</h2>
-          <p class="section-intro">
-            Running out of a 10p fastener can bring a £100,000 production line to a complete halt. Our vendor-managed inventory solutions safeguard your operations.
-          </p>
-          
-          <div class="benefits-list">
-            <div class="b-item">
-              <div class="b-icon">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              </div>
-              <div>
-                <strong>Zero Buffer-Stock Holding Costs</strong>
-                <p>Free up valuable factory floor space and working capital by having COFAST hold your buffer inventory in Plymouth.</p>
-              </div>
-            </div>
-
-            <div class="b-item">
-              <div class="b-icon">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              </div>
-              <div>
-                <strong>Internal Part Number Cross-Referencing</strong>
-                <p>We index your company's internal drawings and part codes across all sites, eliminating ordering errors.</p>
-              </div>
-            </div>
-
-            <div class="b-item">
-              <div class="b-icon">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              </div>
-              <div>
-                <strong>Long-Validity Pricing &amp; Tender Protection</strong>
-                <p>Fixed forward contracts to shield your manufacturing bids against volatile raw metal markets.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="kanban-action-row">
-            <a href="#enquiry" class="btn btn-primary">Book a KANBAN Site Consultation</a>
-            <span class="tel-callout">Or call our Plymouth logistics desk: <strong>01752 344321</strong></span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- DEFENCE & QUALITY STANDARDS SECTION -->
-  <section class="section standards-section" id="standards">
-    <div class="container">
-      <div class="standards-banner gs-fade-up">
-        <div class="standards-header">
-          <div class="section-label">QUALITY &amp; CERTIFICATION</div>
-          <h2 class="section-heading">Compliance with the Highest International &amp; Defence Standards</h2>
-          <p class="section-lead">Safety-critical fasteners used in environments where failure is not an option.</p>
-        </div>
-
-        <div class="standards-cards-grid">
-          <div class="s-card">
-            <div class="s-card-top">
-              <span class="s-pill">QUALITY SYSTEM</span>
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-            </div>
-            <h4>BS EN ISO 9001:2015</h4>
-            <p>Our quality management system is fully audited and registered, ensuring rigorous procurement procedures and batch consistency.</p>
-          </div>
-
-          <div class="s-card">
-            <div class="s-card-top">
-              <span class="s-pill">DEFENCE SPEC</span>
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
-            </div>
-            <h4>Defence Standards 02-862</h4>
-            <p>Conforming to Fastener Defence Standards 02-862 Part 1, Part 2 Issue 3, and Part 3 Issue 3 for royal naval and defence contractors.</p>
-          </div>
-
-          <div class="s-card">
-            <div class="s-card-top">
-              <span class="s-pill">TRACEABILITY</span>
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-            </div>
-            <h4>EN 10204 3.1 Certification</h4>
-            <p>Full mill test reports, chemical analysis, and mechanical tensile certificates supplied with consignments upon request.</p>
-          </div>
-
-          <div class="s-card">
-            <div class="s-card-top">
-              <span class="s-pill">GLOBAL SPEC</span>
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/></svg>
-            </div>
-            <h4>AISI, SAE &amp; British Standards</h4>
-            <p>Supplying compliant fastenings across BS, DIN, ISO, and American Iron and Steel Institute / Society of Automotive Engineers standards.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- RAPID TECHNICAL ENQUIRY & DRAWING UPLOAD SECTION -->
-  <section class="section enquiry-section" id="enquiry">
-    <div class="container">
-      <div class="enquiry-card-wrapper gs-fade-up">
-        <div class="enquiry-header">
-          <div class="section-label">TECHNICAL SALES &amp; ENQUIRY DESK</div>
-          <h2 class="section-heading">Request a Rapid Technical Quotation</h2>
-          <p class="enquiry-desc">
-            Submit your part specifications, bulk schedule, or technical drawings. Our experienced technical desk in Plymouth typically responds within <strong>60 minutes</strong>.
-          </p>
-        </div>
-
-        <form class="brochure-form" onsubmit="handleBrochureSubmit(event)">
-          <div class="form-grid">
-            <div class="form-group">
-              <label>Your Name *</label>
-              <input type="text" id="enqName" required placeholder="e.g. John Henderson">
-            </div>
-
-            <div class="form-group">
-              <label>Company / Organization *</label>
-              <input type="text" id="enqCompany" required placeholder="e.g. Babcock Marine / Devon Precision">
-            </div>
-
-            <div class="form-group">
-              <label>Business Email *</label>
-              <input type="email" id="enqEmail" required placeholder="name@company.co.uk">
-            </div>
-
-            <div class="form-group">
-              <label>Telephone Number *</label>
-              <input type="tel" id="enqPhone" required placeholder="+44 (0)1752 ...">
-            </div>
-
-            <div class="form-group">
-              <label>Service / Product Requirement</label>
-              <select id="enqService">
-                <option value="standard">Standard Fasteners &amp; Fixings Schedule</option>
-                <option value="bearings">Bearings &amp; Transmission Products</option>
-                <option value="kanban">KANBAN / Line-Side Bin Stocking Service</option>
-                <option value="specials">Bespoke CNC Bar-Turned Machining</option>
-                <option value="loctite">Loctite Adhesives &amp; Chemical Products</option>
-                <option value="tender">Project Bid &amp; Tender Costing</option>
-              </select>
-            </div>
-
-            <div class="form-group">
-              <label>Required Timescale</label>
-              <select id="enqUrgency">
-                <option value="urgent">Urgent: Same-Day / Immediate Call-Off</option>
-                <option value="standard" selected>Standard Production: 2–3 Days</option>
-                <option value="scheduled">Scheduled Forward Call-Off</option>
-                <option value="general">General Price &amp; Capability Enquiry</option>
-              </select>
-            </div>
-
-            <div class="form-group full-width">
-              <label>Specification, Quantities or Customer Part Numbers *</label>
-              <textarea id="enqDetails" rows="4" required placeholder="List your required fasteners, standards (DIN 912, A4-80, M12x50), quantities, internal drawing numbers, or technical questions..."></textarea>
-            </div>
-          </div>
-
-          <div class="form-footer-row">
-            <div class="file-box">
-              <label class="file-attach-btn">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"/></svg>
-                <span id="fileLabelText">Attach Technical Drawing / BOM (PDF, DWG, STEP)</span>
-                <input type="file" id="enqFile" onchange="fileAttached(this)" style="display:none;">
-              </label>
-              <span class="file-info-text">Max 25MB &bull; 100% Confidential</span>
-            </div>
-
-            <button type="submit" class="btn btn-primary btn-submit">
-              Send Enquiry to Plymouth Desk
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-            </button>
-          </div>
-
-          <div id="enqSuccess" class="form-success-banner" style="display:none;">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-            <div>
-              <strong>Enquiry Received by Trade Desk</strong>
-              <p>Thank you. Your technical requirement has been queued with our Plympton engineering sales team. A formal quote or technical response will be issued promptly.</p>
-            </div>
-          </div>
-        </form>
-      </div>
-    </div>
-  </section>
-
-  <!-- LOCATION & LOGISTICS HUB / TRADE COUNTER -->
-  <section class="section location-section" id="contact">
-    <div class="container">
-      <div class="grid-2-col">
-        <div class="location-details gs-fade-up">
-          <div class="section-label">LOGISTICS HUB &amp; TRADE COUNTER</div>
-          <h2 class="section-heading">Strategic South West Location Just Minutes from the A38</h2>
+        <div class="gs-fade-up">
+          <div class="section-label">SAFETY-CRITICAL INTEGRITY</div>
+          <h2 class="section-heading">Precision CNC Specials &amp; Defence Standards 02-862</h2>
           <p class="body-text">
-            Our purpose-built 600m² warehouse and trade counter is located in Plympton, offering effortless vehicular access for collection or rapid road freight throughout Devon, Cornwall, and national arterial links.
+            When standard fasteners cannot fulfill your blueprints, we turn custom parts to tolerances of &plusmn;0.01mm from exotic superalloys including Inconel, Monel, Super Duplex, and Titanium.
           </p>
-
-          <div class="contact-card">
-            <div class="c-line">
-              <div class="c-icon">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-              </div>
-              <div>
-                <strong>Sales &amp; Registered Office:</strong>
-                <p>41 Valley Road Industrial Estate, Plympton, Plymouth, Devon PL7 1RF</p>
-              </div>
-            </div>
-
-            <div class="c-line">
-              <div class="c-icon">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-              </div>
-              <div>
-                <strong>Trade Counter Opening Hours:</strong>
-                <p>Monday to Friday: 08:00 – 17:00 (Collections ready in minutes)</p>
-              </div>
-            </div>
-
-            <div class="c-line">
-              <div class="c-icon">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-              </div>
-              <div>
-                <strong>Telephone Direct:</strong>
-                <p><a href="tel:+441752344321" class="c-phone-link">+44 (0)1752 344321</a></p>
-              </div>
-            </div>
-
-            <div class="c-line">
-              <div class="c-icon">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
-              </div>
-              <div>
-                <strong>Facsimile Transmission:</strong>
-                <p>+44 (0)1752 340369</p>
-              </div>
-            </div>
-
-            <div class="c-line">
-              <div class="c-icon">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-              </div>
-              <div>
-                <strong>Direct Sales Email:</strong>
-                <p><a href="mailto:enq321@cofast.co.uk" class="c-email-link">enq321@cofast.co.uk</a></p>
-              </div>
-            </div>
+          <p class="body-text">
+            Audited to <strong>BS EN ISO 9001:2015</strong> and conforming to <strong>Fastener Defence Standards 02-862</strong> (Part 1, 2, 3), we are the supplier of choice to royal naval dockyards, aerospace contractors, and subsea engineers.
+          </p>
+          <div style="display: flex; gap: 14px; margin-top: 24px; flex-wrap: wrap;">
+            <a href="specials.html" class="btn btn-primary">Bespoke CNC Bar Turning</a>
+            <a href="standards.html" class="btn btn-secondary">Quality &amp; Certifications</a>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
 
-        <div class="location-map-col gs-fade-up">
-          <div class="map-card-wrapper">
-            <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2545.986877239331!2d-4.048995523448375!3d50.38541297157989!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486ceb5329c31321%3A0x6b63d76b1f20a597!2sValley%20Rd%2C%20Plympton%2C%20Plymouth%20PL7%201RF%2C%20UK!5e0!3m2!1sen!2suk!4v1700000000000!5m2!1sen!2suk" 
-              width="100%" 
-              height="380" 
-              style="border:0;" 
-              allowfullscreen="" 
-              loading="lazy" 
-              referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-            <div class="map-callout">
-              <span class="pulse-pin"></span>
-              <span>Direct A38 Access &bull; Customer Parking &amp; Loading Bay Available</span>
-            </div>
-          </div>
+  <!-- TESTIMONIAL & LOGISTICS CALLOUT BANNER -->
+  <section class="section" style="background: var(--bg-canvas);">
+    <div class="container gs-fade-up">
+      <div class="testimonial-banner-card">
+        <div class="t-quote">
+          "After 25 years in manufacturing, I consider COFAST to be the leading fastener distributor within the South West. Their rapid response service enables us to function with reduced buffer stock without compromising our production capability."
+        </div>
+        <div class="t-author">
+          <strong>Mr. J. Rice</strong> &bull; Rittal - CSM Ltd
         </div>
       </div>
     </div>
@@ -818,25 +324,25 @@
       <div class="footer-col">
         <h5 class="footer-heading">Principal Products</h5>
         <ul class="footer-links">
-          <li><a href="#capabilities">High Tensile Bolts (8.8, 10.9, 12.9)</a></li>
-          <li><a href="#capabilities">Socket Head Screws &amp; Set Screws</a></li>
-          <li><a href="#capabilities">A2 &amp; A4-80 Marine Stainless</a></li>
-          <li><a href="#capabilities">Ball &amp; Roller Bearings (SKF / FAG)</a></li>
-          <li><a href="#capabilities">Nyloc &amp; Philidas All-Metal Nuts</a></li>
-          <li><a href="#capabilities">Henkel Loctite Adhesives</a></li>
-          <li><a href="#capabilities">Lindapter Structural Clamps</a></li>
+          <li><a href="products.html">High Tensile Bolts (8.8, 10.9, 12.9)</a></li>
+          <li><a href="products.html">Socket Head Screws &amp; Set Screws</a></li>
+          <li><a href="products.html">A2 &amp; A4-80 Marine Stainless</a></li>
+          <li><a href="products.html">Ball &amp; Roller Bearings (SKF / FAG)</a></li>
+          <li><a href="products.html">Nyloc &amp; Philidas All-Metal Nuts</a></li>
+          <li><a href="products.html">Henkel Loctite Adhesives</a></li>
+          <li><a href="products.html">Lindapter Structural Clamps</a></li>
         </ul>
       </div>
 
       <div class="footer-col">
         <h5 class="footer-heading">Specialist Services</h5>
         <ul class="footer-links">
-          <li><a href="#kanban">KANBAN Direct-to-Line Supply</a></li>
-          <li><a href="#kanban">Customer Part SKU Indexing</a></li>
-          <li><a href="#specials">Bespoke CNC Bar Turning</a></li>
-          <li><a href="#specials">Exotic Metals (Inconel, Monel)</a></li>
-          <li><a href="#standards">Defence Standard Conformance</a></li>
-          <li><a href="#contact">Plymouth Trade Counter</a></li>
+          <li><a href="kanban.html">KANBAN Direct-to-Line Supply</a></li>
+          <li><a href="kanban.html">Customer Part SKU Indexing</a></li>
+          <li><a href="specials.html">Bespoke CNC Bar Turning</a></li>
+          <li><a href="specials.html">Exotic Metals (Inconel, Monel)</a></li>
+          <li><a href="standards.html">Defence Standard Conformance</a></li>
+          <li><a href="contact.html">Plymouth Trade Counter</a></li>
         </ul>
       </div>
 
@@ -846,7 +352,7 @@
         <p class="f-contact-line"><strong>Facsimile:</strong> +44 (0)1752 340369</p>
         <p class="f-contact-line"><strong>Email:</strong> enq321@cofast.co.uk</p>
         <p class="f-contact-line"><strong>Address:</strong> 41 Valley Rd, Plympton, Plymouth, Devon PL7 1RF</p>
-        <a href="#enquiry" class="btn btn-secondary btn-sm" style="margin-top: 14px;">Contact Technical Desk</a>
+        <a href="contact.html#enquiry" class="btn btn-secondary btn-sm" style="margin-top: 14px;">Contact Technical Desk</a>
       </div>
     </div>
 
