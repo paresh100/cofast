@@ -16,61 +16,42 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body class="light-theme">
-
-  <!-- TOP BAR -->
-  <div class="top-bar">
-    <div class="container top-bar-container">
-      <div class="top-info">
-        <span class="hub-status"><span class="pulse-indicator"></span> Plymouth Logistics Hub Active</span>
-        <span class="divider">|</span>
-        <span>A38 Expressway Corridor &bull; Same-Day Despatch</span>
-        <span class="divider">|</span>
-        <span class="iso-tag">BS EN ISO 9001 Registered</span>
-      </div>
-      <div class="top-contact">
-        <a href="tel:+441752344321" class="top-link phone-highlight">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-          Trade Desk: +44 (0)1752 344321
-        </a>
-        <a href="mailto:enq321@cofast.co.uk" class="top-link">enq321@cofast.co.uk</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- NAVBAR -->
-  <header class="navbar" id="navbar">
-    <div class="container nav-container">
-      <a href="index.html" class="brand">
-        <div class="brand-icon">
-          <svg width="28" height="28" viewBox="0 0 32 32" fill="none">
-            <polygon points="16,2 29,9.5 29,22.5 16,30 3,22.5 3,9.5" stroke="currentColor" stroke-width="2.5" fill="none"/>
-            <circle cx="16" cy="16" r="6" stroke="currentColor" stroke-width="2.5"/>
-            <circle cx="16" cy="16" r="2" fill="currentColor"/>
+  <!-- TOP MAIN NAVBAR -->
+  <header class="header-nav">
+    <div class="container-fluid nav-wrapper">
+      <a href="index.html" class="logo-area">
+        <div class="logo-symbol">
+          <svg width="34" height="34" viewBox="0 0 36 36" fill="none">
+            <polygon points="18,3 32,10.5 32,25.5 18,33 4,25.5 4,10.5" stroke="#0e1726" stroke-width="3" fill="none"/>
+            <circle cx="18" cy="18" r="7" stroke="#2563eb" stroke-width="3"/>
+            <path d="M18 11 L18 25" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round"/>
           </svg>
         </div>
-        <div class="brand-details">
-          <span class="brand-title">COFAST</span>
-          <span class="brand-subtitle">COMPANY FASTENERS LTD</span>
+        <div class="logo-text-group">
+          <span class="logo-brand">Cofast</span>
+          <span class="logo-motto">ENGINEERED FOR A STRONGER TOMORROW</span>
         </div>
       </a>
 
-      <nav class="nav-menu">
-        <a href="about.html" class="nav-item">About Us</a>
-        <a href="products.html" class="nav-item active">Product Ranges</a>
-        <a href="kanban.html" class="nav-item">KANBAN &amp; Supply</a>
-        <a href="specials.html" class="nav-item">CNC Specials</a>
-        <a href="standards.html" class="nav-item">Standards &amp; Defence</a>
-        <a href="contact.html" class="nav-item">Contact &amp; Location</a>
+      <nav class="nav-links">
+        <a href="products.html" class="nav-link active">Products</a>
+        <a href="standards.html" class="nav-link ">Sectors</a>
+        <a href="standards.html" class="nav-link ">Quality</a>
+        <a href="specials.html" class="nav-link ">Capabilities</a>
+        <a href="kanban.html" class="nav-link ">Sustainability</a>
+        <a href="about.html" class="nav-link ">About</a>
+        <a href="about.html" class="nav-link ">News</a>
+        <a href="contact.html" class="nav-link ">Contact</a>
       </nav>
 
-      <div class="nav-actions">
-        <a href="contact.html#enquiry" class="btn btn-primary nav-cta">
-          Request Technical Quote
+      <div class="nav-right">
+        <button class="search-btn" aria-label="Search">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </button>
+        <a href="contact.html" class="btn-get-quote">
+          Get a Quote
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
         </a>
-        <button class="mobile-toggle" aria-label="Toggle Navigation" onclick="toggleMenu()">
-          <span></span><span></span><span></span>
-        </button>
       </div>
     </div>
   </header>
